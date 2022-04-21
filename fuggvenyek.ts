@@ -1,3 +1,5 @@
+export{};
+
 //Visszatérés érték és paraméter nélküli eljárás
 function ILoveTypeScript():void{
     document.write("Szeretem a TypeScriptet<br>");
@@ -9,6 +11,13 @@ function NegyzetKeruletTeruletEljaras(a:number):void{
     let terulet=a*a;
     document.write(`A(z) ${a} oldalú négyzet kerülete:${kerulet}<br>`);
     document.write(`A(z) ${a} oldalú négyzet területe:${terulet}<br>`);
+}
+
+function TeglalapKeruletTeruletEljaras(a:number, b:number):void{
+    let kerulet=(a+b)*2;
+    let terulet=a*b;
+    document.write(`<br>A(z) ${a} és ${b} oldalú téglalap kerülete:${kerulet}<br>`);
+    document.write(`A(z) ${a} és ${b} oldalú téglalap területe:${terulet}<br>`);
 }
 
 //Visszatérési értékes és paraméter nélküli függvény
@@ -25,4 +34,4 @@ function NegyzetKeruletFuggveny(a:number):number{
 //1) git add .
 //2) git commit -m "typescript függvények"
 //3) git pull
-//4) git psuh
+//4) git push
