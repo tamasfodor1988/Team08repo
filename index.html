@@ -9,14 +9,17 @@
 <body>
     <script src="fuggvenyek.js"></script>
     <script src="fuggvenyesFeladatok.js"></script>
+    <script src="osszetettValtozoTipusok.js"></script>
     <script>
         ILoveTypeScript();
         NegyzetKeruletTeruletEljaras(5);
         let generaltSzam=RandomGeneralo100Fuggveny();
         document.write("<br>A függvénnyel generált szám:"+generaltSzam);
         let negyzetKerulet=NegyzetKeruletFuggveny(3);
-        document.write("<br>A négyzet kerület függvény eredménye:"+negyzetKerulet);
+        document.write("<br>A négyzet kerület függvény eredménye:"+negyzetKerulet+"<br>");
         TeglalapKeruletTeruletEljaras(6,5);
+        document.write(ParosE(6));
+        document.write("<br>A generált prímszám: "+PrimGenerator(10,20));
     </script>
 </body>
 </html>
