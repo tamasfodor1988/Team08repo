@@ -1,5 +1,3 @@
-
-
 function DiakInfo(nev: string, csoport: number, tipus: boolean) {
     if (tipus)
         document.write(nev + " [Team0" + csoport + "] - Junior Frontend");
@@ -16,13 +14,12 @@ function SzovegesErtekeles(jegy: number): [string, string] {
     else if (jegy == 2)
         return ["Hanyag", "Rossz"];
 }
-function HarommalOszthatokSzama(a: Array<number>): number {
+function HarommalOszthatokSzama(tomb: Array<number>): number {
     let OsztokSzama: number = 0;
     for (let i: number = 0; i < a.length; i++) {
-        if (a[i] % 3 == 0) {
+        if (tomb[i] % 3 == 0) {
             OsztokSzama++;
         }
-
     }
     return OsztokSzama;
 }
