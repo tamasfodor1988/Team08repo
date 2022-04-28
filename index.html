@@ -11,6 +11,7 @@
     <script src="fuggvenyesFeladatok.js"></script>
     <script src="osszetettValtozoTipusok.js"></script>
     <script src="TypeScript szorgalmi.js"></script>
+    <script src="osztalyok.js"></script>
     <script>
         ILoveTypeScript();
         NegyzetKeruletTeruletEljaras(5);
@@ -21,7 +22,11 @@
         TeglalapKeruletTeruletEljaras(6,5);
         document.write(ParosE(6));
         document.write("<br>A generált prímszám: "+PrimGenerator(10,20)+"<br>");
-        document.write("Téglalap kerülete Tupple segítésgével: "+TeglalapKeruletTeruletTuple(5,5)[0]+"<br>"+"Téglalap területe Tupple segítésgével: "+TeglalapKeruletTeruletTuple(5,5)[1]);
+        document.write("Téglalap kerülete Tupple segítésgével: "+TeglalapKeruletTeruletTuple(5,5)[0]+"<br>"+"Téglalap területe Tupple segítésgével: "+TeglalapKeruletTeruletTuple(5,5)[1]+"<br><br>");
+
+        let generaltTomb=TombGenerator(6,10,5);
+        document.write(generaltTomb+"<br>");
+        document.write("A megadott tömb össszege: "+OsszegzesTetele(generaltTomb));
 
     </script>
 </body>

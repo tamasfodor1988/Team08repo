@@ -47,3 +47,25 @@ function PrimGenerator(hatarEgy, hatarKetto) {
     } while (sikeresGeneralas == false && probalkozasokSzama < 100);
     return generaltSzam;
 }
+//Szorgalmi
+// Old meg a téglalap kerület terület függvényt Tuple típusú visszatérési értékkel!
+function TeglalapKeruletTeruletTuple(a, b) {
+    return [(a + b) * 2, a * b];
+}
+//Univerzális Tömb generátor, TypeScript-ben
+function TombGenerator(meret, hatar1, hatar2) {
+    var generaltTomb = [];
+    for (var i = 0; i < meret; i++) {
+        var generaltSzam = Math.round(Math.random() * (hatar2 - hatar1)) + hatar1;
+        generaltTomb.push(generaltSzam);
+    }
+    return generaltTomb;
+}
+//Összegzés tétele TypeScript-ben
+function OsszegzesTetele(a) {
+    var osszeg = 0;
+    for (var i = 0; i < a.length; i++) {
+        osszeg += a[i];
+    }
+    return osszeg;
+}
